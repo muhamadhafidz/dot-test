@@ -1,3 +1,38 @@
+## About
+Aplikasi ini dibuat untuk test programing di PT. Digdaya Olah Teknologi (DOT) Indonesia.
+Aplikasi ini dibuat dengan menggunakan HTML, CSS(dengan sedikit sentuhan Bootstrap 5.2.1), LARAVEL dan MYSQL
+aplikasi ini terdiri dari 2 roles yaitu admin dan asisten.
+
+tugas admin :
+- melihat dashboard
+- CRUD Berita Acara
+- CRUD Asisten
+
+Tugas asisten :
+- melihat dashboard
+- Melakukan presensi terhadap Berita Acara yang telah dibuat oleh admin
+
+## Instalation
+note : Laravel 9.x requires a minimum PHP version of 8.0.
+
+- git clone https://github.com/muhamadhafidz/dot-test.git
+- cd dot-test
+- composer install
+- cp .env.example .env
+- php artisan key:generate
+- #setup your .env file (APP_NAME, DB_*)
+- php artisan migrate
+- php artisan db:seed --class=UserSeeder
+- php artisan serve
+
+## Data Dummy untuk login
+- Login sebagai admin (email : hafidz@gmail.com, pass:password123)
+- Login sebagai asisten/user (email : farhan@gmail.com, pass:password123)
+
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
