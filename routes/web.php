@@ -21,8 +21,8 @@ Auth::routes(['register' => false]);
 
 Route::middleware(['auth'])->group(function () {
 
-    Route::middleware(['auth'])->group(function () {
-        Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
+    Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
+    Route::middleware(['auth', 'isAdmin'])->group(function () {
         Route::get('/berita-acara', [App\Http\Controllers\BeritaAcaraController::class, 'index'])->name('berita-acara');
         Route::get('/berita-acara/create', [App\Http\Controllers\BeritaAcaraController::class, 'create'])->name('berita-acara.create');
         Route::get('/berita-acara/edit/{id}', [App\Http\Controllers\BeritaAcaraController::class, 'edit'])->name('berita-acara.edit');
