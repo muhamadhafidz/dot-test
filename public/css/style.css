@@ -1,0 +1,33 @@
+
+html, body {
+    min-height: 100%;
+}
+
+#home-hero { 
+    background-image: url(../img/hero-img.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.row-hero {
+    height: 530px;
+}
+
+.card-col {
+    padding: 0 100px;
+}
+
+.list-group .active {
+    background-color: #6c757d;
+    font-weight: bold;
+}
+
+.list-group-item {
+    background-color: #6c757d;
+    color: #c1d0dd;
+}
+
+.card-data {
+    height: 600px;
+}
