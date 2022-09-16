@@ -15,12 +15,18 @@ Tugas asisten :
 ## Instalation
 note : Laravel 9.x requires a minimum PHP version of 8.0.
 
+- open terminal/cmd
 - git clone https://github.com/muhamadhafidz/dot-test.git
 - cd dot-test
 - composer install
 - cp .env.example .env
 - php artisan key:generate
-- #setup your .env file (APP_NAME, DB_*)
+- Open .env file in your texteditor
+- change APP_NAME=Laravel to APP_NAME=dot-test
+- change DB_DATABASE=laravel to DB_DATABASE=dot_test
+- open your phpmyadmin or similar RDBMS for MySql
+- create new database with name "dot_test" (makesure it same like DB_DATABASE in your .env file)
+- back to terminal/cmd
 - php artisan migrate
 - php artisan db:seed --class=UserSeeder
 - php artisan serve
